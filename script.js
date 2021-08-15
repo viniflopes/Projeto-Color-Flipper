@@ -2,7 +2,7 @@ const hex = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
 const simple = ['Green', 'Red', 'Blue', 'Orange', 'Yellow', 'Purple', 'Brown', 'Gray'] 
 
 function numRandom(parametro) {
-return Math.floor(Math.random() * parametro.length-1);
+return Math.floor(Math.random() * parametro.length);
 }
 function colorHex(){
     return(`#${hex[numRandom(hex)]}${hex[numRandom(hex)]}${hex[numRandom(hex)]}${hex[numRandom(hex)]}${hex[numRandom(hex)]}${hex[numRandom(hex)]}`);
