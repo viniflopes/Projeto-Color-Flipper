@@ -1,0 +1,124 @@
+.MainContainer {
+    margin-top: 15%;
+}
+#FirstContainer {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    margin: 0px 17% 0 17%;
+}
+.FirstHead {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    border: none;
+    font-size: 18px;
+    color: rgb(97, 175, 228);
+}
+.FirstButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-left: 65%;
+    margin-right: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    border: flex;
+    border-radius: 45%;
+    background: white;
+    font-size: 18px;
+    cursor: grab;
+    transition: 100ms;
+    color: rgb(97, 175, 228);
+}
+.SecondButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-right: 65%;
+    margin-left: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    border: flex;
+    border-radius: 45%;
+    background: white;
+    font-size: 18px;
+    cursor: grab;
+    transition: 100ms;
+    color: rgb(97, 175, 228);
+}
+
+.FirstButton:hover, .SecondButton:hover {
+    color: rgb(97, 175, 228);
+}
+
+.SecondContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: 50%;
+    margin: 0px 17% 0 17%;
+    background: violet;
+    border: flex;
+    border-radius: 50%;
+}
+.textBackground {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    color: white;
+    font-size: 25px;
+    letter-spacing: .3rem;
+    width: 45%;
+    height: 20%;
+    background: black;
+    border: flex black;
+    border-radius: 8px;
+    margin-bottom: 2%;
+    padding-left: 1%;
+
+}
+.ThirdButton {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    letter-spacing: .1rem;
+    border: flex ;
+    height: 12%;
+    width: 18%;
+    border-radius: 5px;
+    background: transparent;
+}
+.ThirdButton:hover {
+    border-color: rgb(97, 175, 228);
+    color: rgb(97, 175, 228);
+    width: 22%;
+    height: 15%;
+    transition: 100ms;
+}
+
+@media screen and (max-width: 300px) {
+    .FirstContainer, .FirstHead, .SecondContainer, .FirstButton, .SecondButton, .textBackground, .ThirdButton, .ThirdButton:hover {
+        width: 80%;
+        font-size: smaller;
+        grid-row: 1/1;
+    }
+}
+@media screen and (max-width: 480px) {
+    .FirstContainer, .FirstHead, .SecondContainer, .FirstButton, .SecondButton, .textBackground, .ThirdButton, .ThirdButton:hover {
+        width: 80%;
+        font-size: smaller;
+        grid-row: 1/1;
+    }
+}
+@media screen and (max-width: 600px) {
+    .FirstContainer, .FirstHead, .SecondContainer, .FirstButton, .SecondButton, .textBackground, .ThirdButton, .ThirdButton:hover {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1010px) {
+    .FirstContainer, .FirstHead, .SecondContainer, .FirstButton, .SecondButton, .textBackground, .ThirdButton, .ThirdButton:hover {
+        width: 80%;
+        grid-row: 1/1;
+    }
+}
